@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "avst"
-version = "0.0.1"
+version = "1.0.0"
 description = "Audio Video Sync Tool"
 keywords = ["audio", "video", "sync"]
 authors = [
@@ -22,6 +22,9 @@ classifiers = [
 Documentation = "https://github.com/fodorad/avst#readme"
 Issues = "https://github.com/fodorad/avst/issues"
 Source = "https://github.com/fodorad/avst"
+
+[project.scripts]
+avst = "avst.main:main"
 
 [tool.hatch.metadata.hooks.requirements_txt]
 files = ["requirements.txt"]
